@@ -1,16 +1,27 @@
 .country{
-    border : 2px solid rgb(88, 86, 85);
-    background-color: white;
+    border : 2px solid rgb(165, 138, 125);
+    /* background-color: rgb(102, 97, 97); */
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
+    background-color: #1f2937;   /* dark grey */
+    color: white;
+    /* align-items: center; */
 }
 .country:hover{
-    /* border : 2px solid rgb(88, 86, 85); */
-    background-color: rgb(238, 231, 231);
+    background-color: #374151;
+    transform: scale(1.03);
+    transition: 0.3s;
 }
 .country img{
     /* border : 2px solid salmon; */
+    /* text-align: center; */
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
     border-radius: 20px;
 }
 .country p{
@@ -19,8 +30,8 @@
 }
 
 .country-visited{
-    background-color: rgb(135, 123, 123);
-    color: black;
+    background-color: #35724a;
+    color: white;
     font: bold;
     border: none;
 }
@@ -30,11 +41,11 @@
     font-weight: bold;
 }
 .visited-btn{
-    background-color: black;
+    background-color: #2563eb;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
-    margin: 20px auto 0px;
+    margin: 20px 10px 0px 0px;
     border: none;
     box-shadow: 2px;
 }
@@ -42,3 +53,13 @@
     cursor: pointer;
     background-color: rgb(19, 18, 18);
 }
+.visited{
+    background-color: #22c55e;
+}
+/* .country-container{
+    display: flex;
+    justify-items: center;
+    justify-content: start;
+    gap: 5px; 
+    margin: 0px 0px 0px 0px;
+} */
