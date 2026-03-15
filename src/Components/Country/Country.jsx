@@ -18,9 +18,6 @@ const Country = ({country,handleVisitedCountry,handleVisitedFlag}) => {
     // console.log(handleVisitedCountry);
     return (
         <>
-        
-            { country.name.common !== "Israel" && (
-
                 <div className={`country ${visited ? 'country-visited' : 'country'}`}>
                     <img src={country.flags.flags.png} 
                         alt={country.flags.flags.alt}/>
@@ -38,8 +35,6 @@ const Country = ({country,handleVisitedCountry,handleVisitedFlag}) => {
                         </button>
                     </div>
                 </div>
-            )
-            }
         </>
     );
 };
