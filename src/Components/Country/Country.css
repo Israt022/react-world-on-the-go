@@ -1,0 +1,44 @@
+.country{
+    border : 2px solid rgb(88, 86, 85);
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.country:hover{
+    /* border : 2px solid rgb(88, 86, 85); */
+    background-color: rgb(238, 231, 231);
+}
+.country img{
+    /* border : 2px solid salmon; */
+    border-radius: 20px;
+}
+.country p{
+    color: black;
+    font-weight: bold;
+}
+
+.country-visited{
+    background-color: rgb(135, 123, 123);
+    color: black;
+    font: bold;
+    border: none;
+}
+.country-visited p{
+    /* background-color: rgb(144, 9, 9); */
+    color: black;
+    font-weight: bold;
+}
+.visited-btn{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 20px auto 0px;
+    border: none;
+    box-shadow: 2px;
+}
+.visited-btn:hover{
+    cursor: pointer;
+    background-color: rgb(19, 18, 18);
+}
