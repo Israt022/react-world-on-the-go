@@ -9,7 +9,6 @@ function App() {
 
   return (
     <>
-      <h1>React World on the go...</h1>
       <Suspense fallback={<li>Loading Countries....</li>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
