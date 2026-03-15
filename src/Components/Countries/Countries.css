@@ -1,15 +1,26 @@
 .countries{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
+}
+@media (min-width: 780px){
+   .countries{
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+@media (max-width: 576px){
+    .countries{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 .visited-flag-container{
-    background-color: white;
+    background-color: rgb(40, 50, 66);
     padding: 20px;
     border-radius: 10px;
     margin: 5px;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 .visited-flag-container img{

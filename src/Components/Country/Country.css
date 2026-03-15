@@ -1,10 +1,10 @@
 .country{
-    border : 2px solid rgb(165, 138, 125);
+    border : 2px solid rgb(214, 206, 201);
     /* background-color: rgb(102, 97, 97); */
     padding: 20px;
     margin: 10px;
     border-radius: 20px;
-    background-color: #1f2937;   /* dark grey */
+    background-color: #0f1b2c;   /* dark grey */
     color: white;
     /* align-items: center; */
 }
@@ -25,23 +25,23 @@
     border-radius: 20px;
 }
 .country p{
-    color: black;
-    font-weight: bold;
+    color: white;
+    font-weight:lighter;
 }
 
 .country-visited{
-    background-color: #35724a;
+    background-color: #054639;
     color: white;
     font: bold;
     border: none;
 }
 .country-visited p{
     /* background-color: rgb(144, 9, 9); */
-    color: black;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
 }
 .visited-btn{
-    background-color: #2563eb;
+    background-color: #0e2659;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;

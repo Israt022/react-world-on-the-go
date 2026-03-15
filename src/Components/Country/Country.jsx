@@ -15,7 +15,7 @@ const Country = ({country,handleVisitedCountry,handleVisitedFlag}) => {
         setVisited(!visited);
         handleVisitedCountry(country)
     }
-    // console.log(handleVisitedCountry);
+    console.log(country.languages);
     return (
         <>
                 <div className={`country ${visited ? 'country-visited' : 'country'}`}>
@@ -23,6 +23,15 @@ const Country = ({country,handleVisitedCountry,handleVisitedFlag}) => {
                         alt={country.flags.flags.alt}/>
                     <p>Name : {country.name.common}</p>
                     <p>Area : {country.area.area} {country.area.area > 300000 ? "Big Country" : "Small Country"}</p>
+                    <p>
+                        Languages: {
+                            (() => {
+                            const langs = Object.values(country.languages.languages);
+                            if (langs.length <= 2) return langs.join(', ');
+                            return langs.slice(0, 2).join(', ') + ', etc';
+                            })()
+                        }
+                    </p>
 
                     <div className='country-container'>
                         <button onClick={handleVisited} className={`visited-btn ${visited ? 'visited' : 'visited-btn'}`}>
